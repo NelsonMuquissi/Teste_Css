@@ -1,0 +1,49 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-img{
+    width: 680px;
+    height: 460px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+span {
+    padding: 10px;
+    background-color: tomato;
+    color: #fff;
+    border-radius: 0px 0px 10px 0px;
+}
+.antes, .depois{
+     width: 100%;
+     height: 100%;
+     background-size: cover;
+     background-position: center;
+     position: absolute;
+}
+.antes{
+    background: url(img/CRNO0486.JPG) no-repeat;
+}
+
+.depois{
+    background: url(img/NJUG0540.JPG) no-repeat;
+    left: 100%;
+    transition: left 1s;
+}
+
+
+.box-img:hover .depois{
+    left: 0%;
+}
